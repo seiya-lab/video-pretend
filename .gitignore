@@ -1,35 +1,23 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
+# ビルドファイルやアウトプットファイル
 /build
+/out
 
-# misc
-.DS_Store
-*.pem
+# 依存関係の管理
+/node_modules
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# システムやエディタのファイル
+/.next
+/.vscode
+/.idea
 
-# local env files
-.env*.local
+# バックアップファイルやキャッシュファイル
+*.bak
+*.log
+*.cache
 
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# 環境変数ファイル（秘密情報を含む）
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
